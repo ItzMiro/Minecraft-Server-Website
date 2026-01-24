@@ -10,13 +10,13 @@
 
 <body>
     <img class="Header-img" src="Pictures/main.png" alt="Bild vom Minecraft Server">
-<div class="container">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <a class="menu-link button" href="#top">Home</a>
-    <a class="menu-link button" href="#section1">Beschreibung</a>
-    <a class="menu-link button" href="#section2">Shopping</a>
-    <a class="menu-link button" href="#section3">Medien</a>
-</div>
+    <div class="container">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <a class="menu-link button" href="#top">Home</a>
+        <a class="menu-link button" href="#section1">Beschreibung</a>
+        <a class="menu-link button" href="#section2">Shopping</a>
+        <a class="menu-link button" href="#section3">Medien</a>
+    </div>
 
 
     <h1 class="headline">Website für unseren <span class="Text-Minecraft">Minecraft Server</span></h1>
@@ -57,20 +57,30 @@
     <h2 id="section3">Medien</h2>
     <div class="description-section">
         <div class="half-width">
-            Derzeit gibt es nur eine Mediengruppe, die Blue Media Group. Sie Berichtet über die Aktualitäten des servers und
+            Es gibt derzeit zwei Mediengruppen, nämlich folgende:
+            <br>
+            <br>
+            Blue Media Group
+            <br>
+            Red Media Cooperation
+            <br>
+            <br>
+            Die Blue Media Die Blue Media Group Berichtet über die Aktualitäten des Servers und
             bietet die möglichkeit an Werbungen zu schalten. Sie gehört FondMiro.
+            <br>
+            Die Red Media Cooperation berichtet über Kills und rechtliches auf dem Server
         </div>
 
-            <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.container');
-            if(menu.style.display === 'flex' || menu.style.display === 'block'){
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.container');
+                if (menu.style.display === 'flex' || menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'flex';
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 
 </html>
