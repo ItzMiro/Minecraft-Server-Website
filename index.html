@@ -10,12 +10,14 @@
 
 <body>
     <img class="Header-img" src="Pictures/main.png" alt="Bild vom Minecraft Server">
-    <div class="container">
-        <a class="menu-link button" href="#top">Home</a>
-        <a class="menu-link button" href="#section1">Beschreibung</a>
-        <a class="menu-link button" href="#section2">Shopping</a>
-        <a class="menu-link button" href="#section3">Medien</a>
-    </div>
+<div class="container">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <a class="menu-link button" href="#top">Home</a>
+    <a class="menu-link button" href="#section1">Beschreibung</a>
+    <a class="menu-link button" href="#section2">Shopping</a>
+    <a class="menu-link button" href="#section3">Medien</a>
+</div>
+
 
     <h1 class="headline">Website für unseren <span class="Text-Minecraft">Minecraft Server</span></h1>
 
@@ -59,6 +61,16 @@
             bietet die möglichkeit an Werbungen zu schalten. Sie gehört FondMiro.
         </div>
 
+            <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.container');
+            if(menu.style.display === 'flex' || menu.style.display === 'block'){
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 
 </html>

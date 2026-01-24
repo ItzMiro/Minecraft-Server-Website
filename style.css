@@ -8,14 +8,20 @@ html {
 }
 
 .container {
-    position: relative;   /* nicht mehr fixed */
+    position: fixed;     
+    top: 16px; 
+    left: 50%;              
+    transform: translateX(-50%);  
     display: flex;
-    justify-content: center; /* zentriert die Links horizontal */
     gap: 20px;
-    margin: 16px 0;      /* Abstand oben und unten */
+    z-index: 9999; 
 }
 
-
+.hamburger {
+    display: none; /* auf Desktop unsichtbar */
+    font-size: 30px;
+    cursor: pointer;
+}
 
 .Header-img {
     height: auto;
@@ -85,13 +91,24 @@ h2 {
 
 @media (max-width: 600px) {
     .container {
-        flex-direction: column;  /* Links untereinander */
-        align-items: center;     /* zentriert die Links */
-        margin: 10px 0;
+        flex-direction: column;
+        align-items: flex-start; /* Links untereinander */
+        background-color: rgba(0,0,0,0.8);
+        padding: 10px;
+        width: 200px;
+        top: 10px;
+        left: 10px;
+        transform: none;
+        display: none; /* Anfangs ausgeblendet */
+    }
+
+    .hamburger {
+        display: block; /* Hamburger sichtbar auf Handy */
+        color: white;
     }
 
     .menu-link {
-        margin-left: 0; /* kein linker Abstand mehr */
-        padding: 10px 20px; /* etwas größer für Fingertaps */
+        display: block;
+        margin: 10px 0;
     }
 }
