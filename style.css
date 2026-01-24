@@ -8,12 +8,11 @@ html {
 }
 
 .container {
-    position: fixed;     
-    top: 16px; 
-    left: 50%;              
-    transform: translateX(-50%);  
+    /* position: fixed; */  /* löschen oder auskommentieren */
     display: flex;
+    justify-content: center; /* zentriert das Menü horizontal */
     gap: 20px;
+    margin-top: 16px; /* Abstand vom oberen Rand */
 }
 
 
