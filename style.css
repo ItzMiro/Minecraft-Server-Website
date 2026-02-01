@@ -7,13 +7,21 @@ html {
     scroll-behavior: smooth;
 }
 
+footer {
+    text-align: center;
+    background-color: #181818;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+}
+
 .container {
     position: fixed;     
     top: 16px; 
     left: 50%;              
     transform: translateX(-50%);  
     display: flex;
-    gap: 20px;
+    gap: 1px;
     z-index: 9999; 
 }
 
