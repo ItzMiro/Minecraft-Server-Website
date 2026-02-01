@@ -24,6 +24,10 @@ footer {
     gap: 1px;
     z-index: 9999; 
 }
+.Media {
+ color: #acacac;
+}
+
 
 .hamburger {
     display: none; /* auf Desktop unsichtbar */
