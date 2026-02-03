@@ -1,3 +1,15 @@
+:root {
+    color-scheme: light dark;
+    --h2: black;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --h2: palegreen;
+        --background: rgb(41, 41, 41);
+    }
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,6 +17,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--background);
 }
 
 footer {
@@ -16,21 +29,23 @@ footer {
 }
 
 .container {
-    position: fixed;     
-    top: 16px; 
-    left: 50%;              
-    transform: translateX(-50%);  
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     gap: 1px;
-    z-index: 9999; 
+    z-index: 9999;
 }
+
 .Media {
- color: #acacac;
+    color: #acacac;
 }
 
 
 .hamburger {
-    display: none; /* auf Desktop unsichtbar */
+    display: none;
+    /* auf Desktop unsichtbar */
     font-size: 30px;
     cursor: pointer;
 }
@@ -69,11 +84,13 @@ footer {
 }
 
 .description-section {
-    height: auto; /* Höhe passt sich dem Inhalt an */
+    height: auto;
+    /* Höhe passt sich dem Inhalt an */
     padding: 30px 50px;
     display: flex;
     gap: 50px;
-    flex-wrap: wrap; /* erlaubt Umbruch auf kleinen Bildschirmen */
+    flex-wrap: wrap;
+    /* erlaubt Umbruch auf kleinen Bildschirmen */
 }
 
 
@@ -86,37 +103,45 @@ footer {
 }
 
 .half-width {
-    flex: 1 1 45%; 
+    flex: 1 1 45%;
     min-width: 300px;
 }
 
 .half-width img {
-    width: 100%; /* Bild füllt die ganze Div-Breite */
-    height: auto; /* Höhe passt sich proportional an */
-    object-fit: cover; /* optional, für schöne Füllung ohne Verzerrung */
-    border-radius: 8px; /* optional, sieht hübsch aus */
+    width: 100%;
+    /* Bild füllt die ganze Div-Breite */
+    height: auto;
+    /* Höhe passt sich proportional an */
+    object-fit: cover;
+    /* optional, für schöne Füllung ohne Verzerrung */
+    border-radius: 8px;
+    /* optional, sieht hübsch aus */
 }
 
 h2 {
     text-align: center;
     font-size: 50px;
+    color: var(--h2);
 }
 
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
-        align-items: flex-start; /* Links untereinander */
-        background-color: rgba(0,0,0,0.8);
+        align-items: flex-start;
+        /* Links untereinander */
+        background-color: rgba(0, 0, 0, 0.8);
         padding: 10px;
         width: 200px;
         top: 10px;
         left: 10px;
         transform: none;
-        display: none; /* Anfangs ausgeblendet */
+        display: none;
+        /* Anfangs ausgeblendet */
     }
 
     .hamburger {
-        display: block; /* Hamburger sichtbar auf Handy */
+        display: block;
+        /* Hamburger sichtbar auf Handy */
         color: white;
     }
 
