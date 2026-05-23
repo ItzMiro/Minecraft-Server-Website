@@ -146,11 +146,22 @@ h2 {
         /* Anfangs ausgeblendet */
     }
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    color: white;
+}
+
+@media (max-width: 600px) {
     .hamburger {
-        display: block;
-        /* Hamburger sichtbar auf Handy */
-        color: black;
+        display: block; /* ← sichtbar auf Handy */
     }
+}
 
     .menu-link {
         display: block;
