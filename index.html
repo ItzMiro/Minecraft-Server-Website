@@ -10,22 +10,21 @@
 
 <body>
     <img class="Header-img" src="Pictures/main.png" alt="Bild vom Minecraft Server">
-   <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="container">
         <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <a class="menu-link button" href="index.html">Home</a>
-        <a class="menu-link button" href="spenden.html">Spenden</a>
-        <a class="menu-link button" href="regeln.html">Regeln</a>
+        <a class="menu-link button" href="#top">Home</a>
+        <a class="menu-link button" href="#section2">Spenden</a>
+        <a class="menu-link button" href="#section3">Regeln</a>
     </div>
 
     <h1 class="headline">Website für unseren <span class="Text-Minecraft">Minecraft Server</span></h1>
 
-    <h2>Beschreibung</h2>
+    <h2 id="section1">Beschreibung</h2>
     <div class="description-section">
         <div class="half-width">
             Herzlich willkommen auf der Website unseres Minecraft-Servers! Ihr könnte gerne bauen, Handel treiben und
             PvP gegeneinander spielen.
-            <br>
             <br>
             <h3>Adressen</h3>
             <ul>
@@ -43,6 +42,47 @@
 
         </div>
         <img class="half-width" src="Pictures/something.png" alt="">
+    </div>
+
+    <h2 id="section2" >Spenden</h2>
+    <div class="description-section">
+        <img class="half-width" src="Pictures/Spende.jpg" alt="">
+        <div class="half-width">
+            Spenden spielen eine entscheidende Rolle für den Betrieb unseres Servers, da sie dazu beitragen, die
+            finanziellen Belastungen, die sonst ausschließlich auf uns Betreiber lasten würden, zu verteilen. Wir
+            möchten uns herzlich für jede Spende bedanken, die uns ermöglicht, den Server kontinuierlich zu verbessern
+            und seine Laufzeit zu verlängern. Eure Unterstützung ist uns sehr wichtig und trägt maßgeblich zur
+            Aufrechterhaltung und Weiterentwicklung des Servers bei.
+        </div>
+    </div>
+
+    <h2 id="section3" >Regeln</h2>
+        <div class="description-section">
+        <div class="half-width">
+                <ul class="rules">
+        <li>[1] Sei Respektvoll</li>
+        <li>[2] Keine Diskriminierungen</li>
+        <li>[3] Kein Griefing und Ausrauben</li>
+        <li>[4] Kein Cheaten</li>
+        <li>[5] Keine Minimap</li>
+        <li>[7] Löcher im Boden reparieren</li>
+        <li>[8] Keine auslog fallen</li>
+        <li>[9] PvP nur bei einverständnis</li>
+        <li>[10] Keine Werbung</li>
+        <li>[11] Fair Spielen</li>
+    </ul>
+
+    <h1>Strafen</h1>
+    <ul class="rules">
+        <li>[1] Verwarnungen</li>
+        <li>[2] Mute</li>
+        <li>[3] Kick</li>
+        <li>[4] Temporäre- und Permanente Bans </li>
+    </ul>
+
+
+        </div>
+        <img class="half-width" src="Pictures/shopping.png" alt="">
     </div>
 
     <!--
@@ -90,7 +130,7 @@
 
 
     <footer>
-        <p>Website von Miro</p>
+        <p>Website erstellt von Miro</p>
         ©
         <script>
             document.write(new Date().getFullYear());
