@@ -21,6 +21,10 @@ body {
     font-size: 20px;
 }
 
+p, h1, h2, h3 {
+    margin: 2px 0;
+}
+
 html {
     scroll-behavior: smooth;
     background-color: var(--background);
@@ -29,7 +33,7 @@ html {
 footer {
     text-align: center;
     background-color: #181818;
-    padding: 15px;
+    padding: 30px;
     font-size: 18px;
     color: white;
     margin: 30px -50px -30px -50px;
